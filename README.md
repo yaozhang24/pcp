@@ -1,6 +1,6 @@
 # Posterior Conformal Prediction (PCP)
 
-This repository contains the Python code to implement the method PCP in our article [Posterior Conformal Prediction](https://candes.su.domains/publications/).
+This repository contains the Python code to implement [Posterior Conformal Prediction (PCP)](https://candes.su.domains/publications/).
 
 To generate PCP intervals with approximate conditional coverage, we follow our synthetic data as an example
 
