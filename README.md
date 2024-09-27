@@ -64,7 +64,7 @@ upper_bounds = predictions + np.array(pcp_quantiles)
 ```
 PCP can also be applied to achieve robust subgroup coverage, and level-adaptive coverage in classification. 
 The implementation of PCP in these applications follows the same steps above.
-We refer to our real-data experiments ([notebook1](https://github.com/yaozhang24/pcp/blob/main/Fig_09_subgroup_gender.ipynb) and [notebook2](https://github.com/yaozhang24/pcp/blob/main/Fig_10_logistic.ipynb)) for a demonstration.
+We refer to our real-data experiments ([MEPS19](https://github.com/yaozhang24/pcp/blob/main/Fig_09_subgroup_gender.ipynb) and [HAM10000](https://github.com/yaozhang24/pcp/blob/main/Fig_10_logistic.ipynb)) for a demonstration.
 
 
 ### Reproduction
