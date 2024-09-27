@@ -47,12 +47,12 @@ R_test = np.abs(Y_test - predictions)
 
 # Cross-validation to compute a separate set of residuals for hyperparameter selection
 RF_model = RandomForestRegressor()
-X_train_cv, R_train = cross_val_residuals(X_train, Y_train, model=RF_model)
+X_train_cv, R_train_cv = cross_val_residuals(X_train, Y_train, model=RF_model)
 
 # Run PCP
 alpha = 0.1  # Level for PCP
 PCP_model = PCP()
-PCP_model.train(X_train_cv, R_train)
+PCP_model.train(X_train_cv, R_train_cv)
 
 # Compute PCP quantiles
 pcp_quantiles = PCP_model.calibrate(X_val, R_val, X_test, R_test, alpha)[0]
