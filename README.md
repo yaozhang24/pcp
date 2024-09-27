@@ -72,7 +72,7 @@ We refer to our real-data experiments ([notebook1](https://github.com/yaozhang24
 To reproduce the experiments and figures in our article, please download the following datasets and run the corresponding notebooks in our repository.
 
 
-### Datasets used in the paper
+### Datasets
 
 Communities and Crime ([link](https://archive.ics.uci.edu/dataset/183/communities+and+crime))
 
