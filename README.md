@@ -69,7 +69,7 @@ We refer to our real-data experiments ([notebook1](https://github.com/yaozhang24
 
 ### Reproduction
 
-To reproduce the experiments and figures in our article, please download the following datasets and run the corresponding notebooks.
+To reproduce the experiments and figures in our article, please download the following datasets and run the corresponding notebooks in our repository.
 
 
 ### Datasets used in the paper
