@@ -23,7 +23,7 @@ The development version of our code is available on github:
 git clone https://github.com/yaozhang24/pcp.git
 ```
 ### Example
-One simple way to start using PCP is to generate intervals with approximate conditional coverage in our [synthetic data example](https://github.com/yaozhang24/pcp/blob/main/Fig_04_05_06_setting_1.ipynb):
+One simple way to start using PCP is to generate intervals with approximate conditional coverage in our [synthetic data experiment](https://github.com/yaozhang24/pcp/blob/main/Fig_04_05_06_setting_1.ipynb):
 
 ```python
 
