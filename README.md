@@ -1,6 +1,6 @@
 # Posterior Conformal Prediction (PCP)
 
-This repository contains the Python code to implement the method PCP and reproduce the experiments and figures in our article [Posterior Conformal Prediction](https://candes.su.domains/publications/).
+This repository contains the Python code to implement PCP and reproduce the experiments and figures in our article [Posterior Conformal Prediction](https://candes.su.domains/publications/).
 
 ### Prerequisites
 
