@@ -45,7 +45,7 @@ R_val = np.abs(Y_val - predictions_val)
 predictions = RF.predict(X_test)
 R_test = np.abs(Y_test - predictions)
 
-# Cross-validation to compute a separate set of residuals for hyperparameter selection
+# Cross-validation to generate a separate set of residuals for hyperparameter selection
 RF_model = RandomForestRegressor()
 X_train_cv, R_train_cv = cross_val_residuals(X_train, Y_train, model=RF_model)
 
