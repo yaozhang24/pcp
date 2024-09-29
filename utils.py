@@ -667,7 +667,7 @@ class PCP_Group:
                  If provided, it contains the predictive probabilities for each sample.
          - m_min: int, optional, default=20.
                    Minimum number of samples used to generate the interval
-         - m_max: int, optional, default=50.
+         - m_max: int, optional, default=500.
                    Maximum number of samples used to generate the interval
          """
 
@@ -775,7 +775,7 @@ class PCP_Classifcation:
                  If provided, it contains the predictive probabilities for each sample.
          - m_min: int, optional, default=20.
                    Minimum number of samples used to generate the interval
-         - m_max: int, optional, default=50.
+         - m_max: int, optional, default=500.
                    Maximum number of samples used to generate the interval
          """
 
