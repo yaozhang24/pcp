@@ -657,7 +657,7 @@ def RLCP(X_train, X_val, R_val, X_test, R_test, alpha=0.1, n=100, finite=False):
 
 class PCP_Group:
 
-    def __init__(self, prob=None, group=None, m_min=20):
+    def __init__(self, prob=None, group=None, m_min=20,m_max=50):
         """
          Initializes the PCP_Classification object.
 
@@ -667,12 +667,13 @@ class PCP_Group:
                  If provided, it contains the predictive probabilities for each sample.
          - m_min: int, optional, default=20.
                    Minimum number of samples used to generate the interval
+         - m_max: int, optional, default=50.
+                   Maximum number of samples used to generate the interval
          """
 
         if prob is None:
             self.m = m_min
         else:
-            m_max = 50
             n, n_c = np.shape(prob)
             m_ = (m_max + m_min) / 2
 
@@ -765,7 +766,7 @@ class PCP_Group:
 
 class PCP_Classifcation:
 
-    def __init__(self, prob=None, m_min=20):
+    def __init__(self, prob=None, m_min=20,m_max=50):
         """
          Initializes the PCP_Classification object.
 
@@ -774,12 +775,13 @@ class PCP_Classifcation:
                  If provided, it contains the predictive probabilities for each sample.
          - m_min: int, optional, default=20.
                    Minimum number of samples used to generate the interval
+         - m_max: int, optional, default=50.
+                   Maximum number of samples used to generate the interval
          """
 
         if prob is None:
             self.m = m_min
         else:
-            m_max = 50
             n, n_c = np.shape(prob)
             m_ = (m_max + m_min) / 2
 
