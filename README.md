@@ -52,10 +52,8 @@ X_train_cv, R_train_cv = cross_val_residuals(X_train, Y_train, model=RF_model)
 # Run PCP
 alpha = 0.1  # Level for PCP
 PCP_model = PCP()
-PCP_model.train(X_train_cv, R_train_cv)
-
-# Compute PCP quantiles
-pcp_quantiles = PCP_model.calibrate(X_val, R_val, X_test, R_test, alpha)[0]
+PCP_model.train(X_train_cv, R_train_cv) # Hyperparameter selection
+pcp_quantiles = PCP_model.calibrate(X_val, R_val, X_test, R_test, alpha)[0] # Compute PCP quantiles
 
 # Compute intervals for all test samples
 lower_bounds = predictions - np.array(pcp_quantiles)
