@@ -93,8 +93,6 @@ def GetDataset(name, base_path):
         
         y = df[response_name].values
         X = df[col_names].values
-        
-
 
     if name=="superconductor":
         df = pd.read_csv(base_path + 'train.csv')

@@ -1159,6 +1159,7 @@ def replace_nan_columns_with_ones(X):
 
 
 def simulate_data(num_samples, setting):
+
     X = np.random.rand(num_samples, 1) * 8
     X2 = np.random.rand(num_samples, 5) * 8
     beta2 = np.random.randn(5)
